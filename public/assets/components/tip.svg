@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <!-- Tip placeholder: small rounded wedge sitting at the limb end. -->
+  <path
+    data-color-region="tip"
+    fill="currentColor"
+    color="#0A0A0A"
+    d="M4 18 Q20 4 36 18 Q34 26 30 30 Q20 34 10 30 Q6 26 4 18 Z"
+  />
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 400" width="80" height="400">
+  <!-- Riser base placeholder: hourglass-ish silhouette. The wood region carries
+       data-color-region so the compositor can swap it for a wood pattern. -->
+  <path
+    data-color-region="wood"
+    fill="currentColor"
+    color="#D4A574"
+    d="M30 0 H50 V60 Q60 80 60 120 Q60 160 40 200 Q60 240 60 280 Q60 320 50 340 V400 H30 V340 Q20 320 20 280 Q20 240 40 200 Q20 160 20 120 Q20 80 30 60 Z"
+  />
+  <!-- Three thin horizontal stripe bands across the grip area -->
+  <path
+    data-color-region="stripe-1"
+    data-stripe-index="0"
+    fill="currentColor"
+    color="#0A0A0A"
+    d="M20 188 H60 V194 H20 Z"
+  />
+  <path
+    data-color-region="stripe-2"
+    data-stripe-index="1"
+    fill="currentColor"
+    color="#0A0A0A"
+    d="M20 198 H60 V204 H20 Z"
+  />
+  <path
+    data-color-region="stripe-3"
+    data-stripe-index="2"
+    fill="currentColor"
+    color="#0A0A0A"
+    d="M20 208 H60 V214 H20 Z"
+  />
+</svg>
