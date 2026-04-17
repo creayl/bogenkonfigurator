@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" width="80" height="40">
+  <rect data-stripe-index="0" x="0" y="3"  width="80" height="4" fill="currentColor" />
+  <rect data-stripe-index="1" x="0" y="11" width="80" height="4" fill="currentColor" />
+  <rect data-stripe-index="2" x="0" y="19" width="80" height="4" fill="currentColor" />
+  <rect data-stripe-index="3" x="0" y="27" width="80" height="4" fill="currentColor" />
+  <rect data-stripe-index="4" x="0" y="35" width="80" height="4" fill="currentColor" />
+</svg>

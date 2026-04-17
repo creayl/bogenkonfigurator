@@ -1,0 +1,182 @@
+{
+  "products": {
+    "ilf_mittelteil": {
+      "id": "ilf_mittelteil",
+      "label_de": "ILF Mittelteil",
+      "label_en": "ILF Riser",
+      "options": {
+        "length": {
+          "type": "select",
+          "label_de": "Länge",
+          "unit": "inch",
+          "values": [19, 21, 23, 25, 27],
+          "default": 23
+        },
+        "handedness": {
+          "type": "radio",
+          "label_de": "Ausführung",
+          "values": [
+            { "id": "RH", "label_de": "Rechtshand" },
+            { "id": "LH", "label_de": "Linkshand" }
+          ],
+          "default": "RH"
+        },
+        "wood": {
+          "type": "select",
+          "label_de": "Holzart",
+          "values": "TODO_WOOD_LIST",
+          "placeholder_values": [
+            { "id": "oak", "label_de": "Eiche", "pattern": "/assets/wood-patterns/oak.svg" },
+            { "id": "walnut", "label_de": "Nussbaum", "pattern": "/assets/wood-patterns/walnut.svg" },
+            { "id": "maple", "label_de": "Ahorn", "pattern": "/assets/wood-patterns/maple.svg" }
+          ],
+          "default": "oak"
+        },
+        "stripe_count": {
+          "type": "select",
+          "label_de": "Anzahl Streifen",
+          "values": [2, 3, 5],
+          "default": 3,
+          "note_de": "Bei 5 Streifen zeigt die Vorschau eine repräsentative Darstellung mit 3 Streifen."
+        },
+        "stripe_colors": {
+          "type": "color_per_stripe",
+          "label_de": "Farbe Streifen",
+          "palette": "ral_palette",
+          "default_same_color": "RAL_9005"
+        },
+        "screw_color": {
+          "type": "color",
+          "label_de": "Farbe Schrauben",
+          "palette": "ral_palette",
+          "default": "RAL_9005"
+        }
+      }
+    },
+    "takedown_bogen": {
+      "id": "takedown_bogen",
+      "label_de": "Takedown Bogen (Kompletter Bogen)",
+      "options": {
+        "length": {
+          "type": "select",
+          "label_de": "Länge",
+          "unit": "inch",
+          "values": [60, 62, 64, 66, 68, 70],
+          "default": 66
+        },
+        "draw_weight": {
+          "type": "select",
+          "label_de": "Stärke",
+          "unit": "lbs",
+          "values_range": { "min": 20, "max": 70, "step": 1 },
+          "default": 35
+        },
+        "handedness": {
+          "type": "radio",
+          "label_de": "Ausführung",
+          "values": [
+            { "id": "RH", "label_de": "Rechtshand" },
+            { "id": "LH", "label_de": "Linkshand" }
+          ],
+          "default": "RH"
+        },
+        "wood": {
+          "type": "select",
+          "label_de": "Holzart",
+          "values": "TODO_WOOD_LIST",
+          "placeholder_values": [
+            { "id": "oak", "label_de": "Eiche", "pattern": "/assets/wood-patterns/oak.svg" },
+            { "id": "walnut", "label_de": "Nussbaum", "pattern": "/assets/wood-patterns/walnut.svg" },
+            { "id": "maple", "label_de": "Ahorn", "pattern": "/assets/wood-patterns/maple.svg" }
+          ],
+          "default": "oak"
+        },
+        "stripe_count": {
+          "type": "select",
+          "label_de": "Anzahl Streifen",
+          "values": [2, 3, 5],
+          "default": 3
+        },
+        "stripe_colors": {
+          "type": "color_per_stripe",
+          "label_de": "Farbe Streifen",
+          "palette": "ral_palette",
+          "default_same_color": "RAL_9005"
+        },
+        "limb_color": {
+          "type": "color",
+          "label_de": "Farbe Wurfarme",
+          "palette": "ral_palette",
+          "default": "RAL_9005"
+        },
+        "wedge_color": {
+          "type": "color",
+          "label_de": "Farbe Keile",
+          "palette": "ral_palette",
+          "default": "RAL_9005"
+        },
+        "tip_color": {
+          "type": "color",
+          "label_de": "Farbe Tips",
+          "palette": "ral_palette",
+          "default": "RAL_9005"
+        },
+        "screw_color": {
+          "type": "color",
+          "label_de": "Farbe Schrauben",
+          "palette": "ral_palette",
+          "default": "RAL_9005"
+        },
+        "tiller": {
+          "type": "radio",
+          "label_de": "Tiller",
+          "values": [
+            { "id": "3_under", "label_de": "3-Unter" },
+            { "id": "mediterran", "label_de": "Mediterran" }
+          ],
+          "default": "mediterran"
+        },
+        "accessories": {
+          "type": "multi_select",
+          "label_de": "Zubehör",
+          "values": [
+            { "id": "string", "label_de": "Sehne" },
+            { "id": "quiver", "label_de": "Bogenköcher" },
+            { "id": "knife", "label_de": "Messer mit Resten aus Bogen" }
+          ],
+          "default": []
+        },
+        "notes": {
+          "type": "textarea",
+          "label_de": "Bemerkungen / Sonderwünsche",
+          "max_length": 1000
+        }
+      }
+    }
+  },
+  "palettes": {
+    "ral_palette": "TODO_COMPLETE_RAL_LIST",
+    "ral_palette_placeholder": [
+      { "id": "RAL_9005", "name_de": "Tiefschwarz", "hex": "#0A0A0A" },
+      { "id": "RAL_9010", "name_de": "Reinweiß", "hex": "#FFFFFF" },
+      { "id": "RAL_3020", "name_de": "Verkehrsrot", "hex": "#CC0605" },
+      { "id": "RAL_5010", "name_de": "Enzianblau", "hex": "#0E294B" },
+      { "id": "RAL_6005", "name_de": "Moosgrün", "hex": "#114232" },
+      { "id": "RAL_8017", "name_de": "Schokoladenbraun", "hex": "#45322E" },
+      { "id": "RAL_1023", "name_de": "Verkehrsgelb", "hex": "#FAD201" },
+      { "id": "RAL_7016", "name_de": "Anthrazitgrau", "hex": "#293133" }
+    ]
+  },
+  "rules": {
+    "dependencies": [],
+    "note": "Laut Kundenantwort Frage 10: Aktuell keine Abhängigkeiten zwischen Optionen."
+  },
+  "ui_flow": {
+    "order": ["wood", "stripe_count", "stripe_colors", "limb_color", "wedge_color", "tip_color", "screw_color", "handedness", "length", "draw_weight", "tiller", "accessories", "notes"],
+    "note": "Visuelle Optionen zuerst, dann Spezifikationen. Bestätigt vom Kunden Frage 11."
+  },
+  "email": {
+    "recipient_configurable": true,
+    "note": "Laut Kundenantwort Frage 17: Eingabefeld für E-Mail-Empfänger."
+  }
+}
