@@ -2,6 +2,16 @@ import { useMemo } from 'react';
 import productsConfig from '../../config/products.json';
 import { ralToHex } from '../../lib/ralColors.js';
 
+// Siehe PROJECT_BRIEF.md (Wood patterns): die SVG-Patterns basieren auf
+// diesen Grundtönen. Wir ziehen sie hier raus, damit die Canvas-Vorschau
+// eine solide Fallback-Farbe kennt, wenn das Pattern nicht geladen werden
+// kann (z.B. bei html2canvas-Rasterung für den PDF-Export).
+const WOOD_BASE_COLORS = {
+  oak: '#C8A877',
+  walnut: '#5C4033',
+  maple: '#E8D4A8'
+};
+
 // Builds an array of layer specs from the current selections. Each spec is
 // renderer-agnostic: today CanvasPreview interprets them as inline SVG groups,
 // later the same specs will drive a raster canvas tinting routine.
@@ -13,6 +23,10 @@ export function useLayerCompositor({ product, selections }) {
     const woodOpt = product.options.wood;
     const woodEntry = (woodOpt?.placeholder_values ?? []).find((w) => w.id === woodId);
     const woodPattern = woodEntry?.pattern ?? '/assets/wood-patterns/oak.svg';
+    // Basis-Farbton pro Holzart. Wird als solide Fallback-Füllung unter dem
+    // Pattern gerendert, damit die Silhouette auch dann sichtbar ist, wenn
+    // html2canvas (PDF-Export) externe SVG-Pattern-Referenzen nicht auflöst.
+    const woodBase = WOOD_BASE_COLORS[woodId] ?? WOOD_BASE_COLORS.oak;
 
     const stripeCount = Number(selections.stripe_count ?? 3);
     const stripeColors = (selections.stripe_colors ?? []).map((id) => ralToHex(id));
@@ -33,7 +47,7 @@ export function useLayerCompositor({ product, selections }) {
       layers.push({ kind: 'wedge', position: 'upper', color: wedgeColor });
       layers.push({ kind: 'wedge', position: 'lower', color: wedgeColor });
     }
-    layers.push({ kind: 'riser', woodPattern });
+    layers.push({ kind: 'riser', woodPattern, woodBase });
     if (isTakedown) {
       layers.push({ kind: 'tip', position: 'upper', color: tipColor });
       layers.push({ kind: 'tip', position: 'lower', color: tipColor });

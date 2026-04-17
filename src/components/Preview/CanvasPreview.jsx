@@ -64,7 +64,7 @@ function renderLayer(layer, idx) {
     case 'tip':
       return <TipLayer key={idx} position={layer.position} color={layer.color} />;
     case 'riser':
-      return <RiserLayer key={idx} />;
+      return <RiserLayer key={idx} woodBase={layer.woodBase} />;
     case 'stripes':
       return <StripesLayer key={idx} count={layer.count} colors={layer.colors} />;
     default:
@@ -75,14 +75,17 @@ function renderLayer(layer, idx) {
 // All shapes mirror the placeholder SVGs in /public/assets/components.
 // Coordinates are arranged so they form a recognizable bow silhouette.
 
-function RiserLayer() {
+function RiserLayer({ woodBase = '#D4A574' }) {
+  // Zwei Pfade auf identischer Geometrie: der erste liefert eine solide
+  // Holz-Grundfarbe als Silhouette (und bleibt sichtbar, wenn das externe
+  // Pattern-Bild in html2canvas nicht geladen wird), der zweite legt das
+  // SVG-Pattern darüber, sobald es verfügbar ist.
+  const d =
+    'M30 0 H50 V60 Q60 80 60 120 Q60 160 40 200 Q60 240 60 280 Q60 320 50 340 V400 H30 V340 Q20 320 20 280 Q20 240 40 200 Q20 160 20 120 Q20 80 30 60 Z';
   return (
     <g data-layer="riser" transform="translate(140 180)">
-      <path
-        data-color-region="wood"
-        fill="url(#wood-pattern)"
-        d="M30 0 H50 V60 Q60 80 60 120 Q60 160 40 200 Q60 240 60 280 Q60 320 50 340 V400 H30 V340 Q20 320 20 280 Q20 240 40 200 Q20 160 20 120 Q20 80 30 60 Z"
-      />
+      <path data-color-region="wood-base" fill={woodBase} d={d} />
+      <path data-color-region="wood" fill="url(#wood-pattern)" d={d} />
     </g>
   );
 }
