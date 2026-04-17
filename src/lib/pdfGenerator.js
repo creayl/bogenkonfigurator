@@ -19,6 +19,18 @@ function formatValue(key, value, optionDef) {
     const match = (optionDef.values || []).find((v) => v.id === value);
     return match?.label_de ?? value;
   }
+  if (optionDef?.type === 'select') {
+    const candidates = Array.isArray(optionDef.values)
+      ? optionDef.values
+      : optionDef.placeholder_values || [];
+    if (candidates.length && typeof candidates[0] === 'object') {
+      const match = candidates.find((v) => v.id === value);
+      if (match) {
+        const label = match.label_de ?? value;
+        return optionDef.unit ? `${label} ${optionDef.unit}` : label;
+      }
+    }
+  }
   if (optionDef?.unit) return `${value} ${optionDef.unit}`;
   return String(value);
 }
