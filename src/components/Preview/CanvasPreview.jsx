@@ -113,50 +113,54 @@ function StripesLayer({ count, colors }) {
 }
 
 function LimbLayer({ position, color }) {
-  // Limb native: 300x60. Rotated -90 (upper) or +90 (lower) so the limb
-  // extends vertically away from the riser.
-  const transform =
+  // Limb: vertikal verlaufende Schwinge, die von der Wedge-Position am
+  // Riser bis kurz vor den Tip läuft. Als eigener vertikaler Pfad statt
+  // gedrehtem Rechteck gezeichnet, damit die ausgewählte Farbe auf einer
+  // klar sichtbaren Fläche landet.
+  const d =
     position === 'upper'
-      ? 'translate(180 200) rotate(-90) translate(0 -30)'
-      : 'translate(180 560) rotate(90) translate(0 -30)';
+      ? 'M150 170 Q165 100 170 40 Q175 100 190 170 Z'
+      : 'M150 590 Q165 660 170 720 Q175 660 190 590 Z';
   return (
-    <g data-layer={`limb-${position}`} transform={transform}>
-      <path
-        data-color-region="limb"
-        fill={color}
-        d="M0 30 Q75 0 150 18 Q225 36 300 30 Q225 50 150 38 Q75 30 0 30 Z"
-      />
+    <g data-layer={`limb-${position}`}>
+      <path data-color-region="limb" fill={color} d={d} />
     </g>
   );
 }
 
 function WedgeLayer({ position, color }) {
+  // Wedges sitzen sichtbar an der Außenkante des Risers, dort wo der Limb
+  // ansetzt. Vorher wurden sie mitten im Riser gezeichnet und dadurch von
+  // der Riser-Silhouette komplett überdeckt.
   const transform =
     position === 'upper'
-      ? 'translate(165 180)'
-      : 'translate(165 580) scale(1 -1)';
+      ? 'translate(150 160)'
+      : 'translate(150 620) scale(1 -1)';
   return (
     <g data-layer={`wedge-${position}`} transform={transform}>
       <path
         data-color-region="wedge"
         fill={color}
-        d="M2 22 L28 22 L20 6 L10 6 Z"
+        d="M0 22 L44 22 L34 4 L10 4 Z"
       />
     </g>
   );
 }
 
 function TipLayer({ position, color }) {
+  // Tips sitzen an den äußeren Enden der Limbs und müssen innerhalb des
+  // viewBox (0–760) liegen, damit die Farbwahl sichtbar ist. Der obere
+  // Tip lag zuvor bei y=-110 und war dadurch komplett außerhalb.
   const transform =
     position === 'upper'
-      ? 'translate(160 -110)'
-      : 'translate(160 690)';
+      ? 'translate(150 20)'
+      : 'translate(150 720)';
   return (
     <g data-layer={`tip-${position}`} transform={transform}>
       <path
         data-color-region="tip"
         fill={color}
-        d="M4 18 Q20 4 36 18 Q34 26 30 30 Q20 34 10 30 Q6 26 4 18 Z"
+        d="M6 20 Q22 4 38 20 Q36 30 30 34 Q22 38 14 34 Q8 30 6 20 Z"
       />
     </g>
   );
