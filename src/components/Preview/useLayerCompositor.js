@@ -40,15 +40,16 @@ export function useLayerCompositor({ product, selections }) {
 
     const layers = [];
 
-    // Back to front: limbs, wedges, riser, tips, stripes overlay.
+    // Reihenfolge laut PROJECT_BRIEF.md: Riser (hinten) → Limbs → Wedges →
+    // Tips → Stripes (vorne). Vorher wurden Limbs/Wedges hinter dem Riser
+    // gerendert — die Wedge-Silhouette lag komplett innerhalb des Risers und
+    // war dadurch unsichtbar.
+    layers.push({ kind: 'riser', woodPattern, woodBase });
     if (isTakedown) {
       layers.push({ kind: 'limb', position: 'upper', color: limbColor });
       layers.push({ kind: 'limb', position: 'lower', color: limbColor });
       layers.push({ kind: 'wedge', position: 'upper', color: wedgeColor });
       layers.push({ kind: 'wedge', position: 'lower', color: wedgeColor });
-    }
-    layers.push({ kind: 'riser', woodPattern, woodBase });
-    if (isTakedown) {
       layers.push({ kind: 'tip', position: 'upper', color: tipColor });
       layers.push({ kind: 'tip', position: 'lower', color: tipColor });
     }
