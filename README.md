@@ -47,6 +47,9 @@ was noch ausgetauscht werden muss. Verzeichnisse:
 4. `placeholder_values` in `products.json` durch reale `values` ersetzen
    (siehe TODOs unten).
 
+Details zu Koordinaten, Bounding-Boxes und Render-Reihenfolge der aktuellen
+Platzhalter-Vorschau stehen in [`docs/canvas-geometry.md`](docs/canvas-geometry.md).
+
 ## Offene TODOs (echte Daten vom Kunden nötig)
 
 In `src/config/products.json` markiert:

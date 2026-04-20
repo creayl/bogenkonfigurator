@@ -6,10 +6,22 @@ nicht umsetzbare mit `- [!] …` inkl. kurzer Begründung.
 
 ## Offene Aufgaben
 
-- [ ] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
-      niedrige Priorität, sobald echte Assets kommen ohnehin Umbau.
+- [x] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
+      2026-04-20 als `docs/canvas-geometry.md` abgelegt.
 
 ## Log
+
+### 2026-04-20
+
+- Gelesen: 6 Feedback-Einträge im Doc — alle bereits in
+  PROCESSED_FEEDBACK.md, keine Antworten auf die offenen Rückfragen.
+  Keine neuen Umsetzungen.
+- Fallback-Task aus TASKS.md abgearbeitet:
+  `docs/canvas-geometry.md` erstellt, aus README verlinkt.
+- Abgelehnt: –
+- Nächster sinnvoller Schritt: Warten bis der Kunde die drei offenen
+  Fragen im Doc beantwortet (Fortschrittsanzeige, 5-Streifen-Hinweis,
+  Schrauben-Sichtbarkeit).
 
 ### 2026-04-17
 
