@@ -6,10 +6,25 @@ nicht umsetzbare mit `- [!] …` inkl. kurzer Begründung.
 
 ## Offene Aufgaben
 
-- [ ] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
+- [x] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
       niedrige Priorität, sobald echte Assets kommen ohnehin Umbau.
+      Erledigt: `docs/canvas-geometry.md` (2026-04-21).
 
 ## Log
+
+### 2026-04-21
+
+- Gelesen: 6 Feedback-Einträge im Doc, alle bereits in
+  `PROCESSED_FEEDBACK.md` vermerkt → keine neuen Hashes.
+- Fallback auf TASKS.md: einzigen offenen Backlog-Punkt
+  "Canvas-Geometrie dokumentieren" abgearbeitet.
+- Umgesetzt:
+  - `docs/canvas-geometry.md` — ViewBox, Layer-Reihenfolge,
+    Koordinaten aller Layer, Spiegelung, Farb-Pipeline,
+    PDF-Rasterungs-Hinweise.
+- Nächster sinnvoller Schritt: warten, bis die drei offenen
+  `[Frage an Kunden]`-Einträge vom 2026-04-17 (Fortschrittsanzeige,
+  5 Streifen, Schrauben) im Doc beantwortet werden.
 
 ### 2026-04-17
 
