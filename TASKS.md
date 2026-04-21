@@ -6,10 +6,20 @@ nicht umsetzbare mit `- [!] …` inkl. kurzer Begründung.
 
 ## Offene Aufgaben
 
-- [ ] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
-      niedrige Priorität, sobald echte Assets kommen ohnehin Umbau.
+_Aktuell keine offenen Aufgaben im Backlog. Nächster Lauf zieht aus dem
+Feedback-Doc._
 
 ## Log
+
+### 2026-04-19
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen warten weiter auf
+  Antwort).
+- Fallback aus TASKS.md abgearbeitet:
+  - `docs/canvas-geometry.md` angelegt — Koordinaten, Render-Reihenfolge,
+    Transforms und Farbfluss für den Preview-Compositor dokumentiert.
+  - Branch: `claude/magical-ride-z766J`
 
 ### 2026-04-17
 
