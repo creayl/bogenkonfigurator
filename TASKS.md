@@ -6,10 +6,21 @@ nicht umsetzbare mit `- [!] …` inkl. kurzer Begründung.
 
 ## Offene Aufgaben
 
-- [ ] Canvas-Geometrie dokumentieren (Koordinaten, Render-Reihenfolge) —
-      niedrige Priorität, sobald echte Assets kommen ohnehin Umbau.
+- _(keine offenen Einträge)_
 
 ## Log
+
+### 2026-04-23
+
+- Feedback-Doc gelesen: 6 Einträge im Abschnitt „Neues Feedback", alle
+  bereits durch den Lauf vom 2026-04-17 verarbeitet (Hash-Dedup).
+- Keine neuen Feedback-Einträge → Fallback auf TASKS.md.
+- Umgesetzt: `src/components/Preview/GEOMETRY.md` ergänzt (Koordinaten-
+  system, vertikale Zonen, Render-Reihenfolge, Händigkeit, Hinweis auf
+  Ablösung bei Umstieg auf echte Foto-Assets).
+- Nächster sinnvoller Schritt: Antworten des Kunden auf die drei offenen
+  Fragen (Fortschrittsanzeige, 5-Streifen-Hinweis, Schrauben-Sichtbarkeit)
+  im Doc abwarten.
 
 ### 2026-04-17
 
