@@ -11,6 +11,18 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-04-24
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen warten weiter auf
+  Antwort).
+- TASKS.md-Backlog leer → Leerlauf protokolliert, kein Summary-Issue,
+  Lauf sauber beendet.
+- Nächster sinnvoller Schritt: Auf Kunden-Antworten zu den drei
+  `[Frage an Kunden]`-Einträgen warten (Fortschrittsanzeige, 5-Streifen-
+  Hinweis, Schrauben-Farb-Sichtbarkeit). Ohne die Antworten gibt es
+  keine umsetzbaren Folgeänderungen aus dem Feedback-Kanal.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
