@@ -11,6 +11,14 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-04-25
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen warten weiter auf
+  Antwort: Fortschrittsanzeige, 5-Streifen-Hinweis, Schrauben-Sichtbarkeit).
+- TASKS.md-Backlog: leer.
+- Leerlauf — kein PR, kein Summary-Issue.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
