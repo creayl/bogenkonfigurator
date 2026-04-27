@@ -11,6 +11,15 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-04-27
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes weiterhin in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen aus 2026-04-17 warten
+  weiter auf Antwort).
+- TASKS.md-Backlog leer.
+- Kein Code geändert, kein Summary-Issue erstellt — Leerlauf.
+- Branch: `claude/magical-ride-GoCXe`.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
