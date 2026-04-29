@@ -11,6 +11,20 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-04-29
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
+  `PROCESSED_FEEDBACK.md`). Die 3 Kunden-Rückfragen vom 2026-04-17
+  warten weiterhin unbeantwortet im Doc — bis dahin keine
+  Folgeumsetzung möglich:
+  - `Fortschrittsanzeige zeigt immer 100%` — Optionen a/b/c offen
+  - `5 Streifen werden als 3 angezeigt` — Hinweistext ja/nein offen
+  - `Schrauben-Farbe ohne sichtbare Schrauben in Vorschau` — wo
+    sichtbar / nicht darstellbar?
+- Fallback (TASKS.md-Backlog): ebenfalls leer.
+- Ergebnis: Leerlauf protokolliert, kein Summary-Issue, kein PR.
+- Branch: `claude/magical-ride-0T0Em`
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
