@@ -11,6 +11,18 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-04
+
+- Feedback-Doc gelesen: 6 Einträge im "Neues Feedback"-Abschnitt, alle
+  6 Hashes bereits in `PROCESSED_FEEDBACK.md` (3 umgesetzt durch
+  PRs #3/#4/#5, 3 Rückfragen an den Kunden weiterhin unbeantwortet).
+- Keine neuen Einträge → Fallback auf TASKS.md.
+- TASKS.md "Offene Aufgaben" ist leer → Leerlauf, kein Summary-Issue.
+- Status der drei offenen Kunden-Rückfragen seit 2026-04-17:
+  Fortschrittsanzeige (a/b/c), 5-Streifen-Hinweis, Schrauben-Sichtbarkeit
+  — Nikolai bräuchte Antworten vom Kunden, damit der nächste Lauf
+  Folgeänderungen umsetzen kann.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
