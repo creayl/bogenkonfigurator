@@ -11,6 +11,16 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-06
+
+- Feedback-Doc gelesen: 6 Einträge im Abschnitt „Neues Feedback" — alle
+  Hashes bereits in `PROCESSED_FEEDBACK.md` (Bootstrap vom 2026-04-17),
+  keine neuen Beiträge des Kunden, keine Antworten auf die drei offenen
+  `[Frage an Kunden]`-Rückfragen.
+- TASKS.md-Backlog leer.
+- Ergebnis: Leerlauf — kein Code-PR, kein Summary-Issue. Die drei
+  Rückfragen warten weiter auf eine Antwort des Kunden im Doc.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
