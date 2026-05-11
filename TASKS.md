@@ -11,6 +11,14 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-11
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes weiterhin in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen warten unverändert auf
+  Antwort).
+- TASKS.md-Backlog leer → kein Fallback-Task umgesetzt.
+- Leerlauf, kein Summary-Issue erstellt.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
