@@ -11,6 +11,17 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-12
+
+- Feedback-Doc gelesen: 6 Einträge im Abschnitt „Neues Feedback",
+  alle Hashes bereits in `PROCESSED_FEEDBACK.md` (3 Umsetzungen aus
+  dem v3-Bootstrap + 3 offene Kunden-Rückfragen).
+- Kunden-Rückfragen weiterhin unbeantwortet: Fortschrittsanzeige
+  (a/b/c), 5-Streifen-Hinweis, Schrauben-Sichtbarkeit. Wartet auf
+  Antwort im Doc — nichts zu tun.
+- Fallback TASKS.md: leer.
+- Leerlauf. Kein Summary-Issue, kein PR.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
