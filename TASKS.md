@@ -11,6 +11,17 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-13
+
+- Feedback-Doc gelesen: 6 Einträge im Abschnitt „Neues Feedback", alle 6
+  Hashes bereits in `PROCESSED_FEEDBACK.md` → keine neuen Einträge.
+- Fallback aus TASKS.md: Backlog ist leer.
+- Drei Kunden-Rückfragen aus dem 2026-04-17-Lauf warten weiter auf
+  Antwort im Doc (Fortschrittsanzeige, 5-Streifen-Hinweis,
+  Schrauben-Position).
+- Leerlauf: kein PR, kein Summary-Issue. Branch
+  `claude/magical-ride-gPIKo` wird mit diesem Log-Eintrag gepusht.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
