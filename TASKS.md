@@ -11,6 +11,34 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-15
+
+- Feedback-Doc gelesen: 6 Einträge unter „Neues Feedback", alle 6 Hashes
+  stehen bereits in `PROCESSED_FEEDBACK.md` (Bootstrap 2026-04-17).
+  Keine neuen Absätze, keine Kunden-Antworten auf die drei offenen
+  Rückfragen (Fortschrittsanzeige, 5-Streifen-Hinweis,
+  Schrauben-Sichtbarkeit).
+- TASKS.md-Backlog leer → kein Fallback-Task umsetzbar.
+- Drei Rückfragen warten weiterhin auf Antwort des Kunden im Doc
+  (seit ~4 Wochen). Bereits offen: Summary-Issue #10, Leerlauf-PRs
+  #12 (2026-05-03) und #13 (2026-05-14).
+- Leerlauf, kein neues Summary-Issue.
+
+### 2026-05-14
+
+- Feedback-Doc: keine neuen Einträge (Hashes weiterhin identisch zum
+  Bootstrap vom 2026-04-17).
+- TASKS.md-Backlog leer.
+- Drei Kunden-Rückfragen weiterhin unbeantwortet.
+- Leerlauf, kein Summary-Issue. PR #13 für Log-Eintrag.
+
+### 2026-05-03
+
+- Feedback-Doc: keine neuen Einträge.
+- TASKS.md-Backlog leer.
+- Drei Kunden-Rückfragen weiterhin unbeantwortet.
+- Leerlauf, kein Summary-Issue. PR #12 für Log-Eintrag.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
