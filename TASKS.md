@@ -11,6 +11,15 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-17
+
+- Feedback-Doc: keine neuen Einträge (alle 6 Hashes in
+  `PROCESSED_FEEDBACK.md`, 3 Kunden-Rückfragen vom 2026-04-17 warten
+  weiterhin auf Antwort im Doc).
+- TASKS.md: keine offenen Backlog-Aufgaben.
+- Ergebnis: Leerlauf. Kein Summary-Issue, kein PR.
+- Branch: `claude/magical-ride-EUmPz`
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
