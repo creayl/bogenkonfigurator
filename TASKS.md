@@ -11,6 +11,17 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-19
+
+- Feedback-Doc: keine neuen Einträge. Alle 6 Hashes unter „Neues
+  Feedback" sind seit dem Bootstrap 2026-04-17 in
+  `PROCESSED_FEEDBACK.md`. Die drei `[Frage an Kunden]`-Rückfragen
+  warten unverändert auf Antwort (jetzt ~5 Wochen).
+- TASKS.md-Backlog: leer (keine offenen `[ ]`-Aufgaben).
+- Keine inhaltlichen Änderungen → kein Summary-Issue (gemäß Schritt 7
+  der Routine).
+- Branch: `claude/magical-ride-mbDw4`.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
