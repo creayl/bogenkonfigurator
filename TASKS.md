@@ -11,6 +11,20 @@ Feedback-Doc._
 
 ## Log
 
+### 2026-05-03
+
+- Feedback-Doc gelesen: 6 Einträge im Abschnitt „Neues Feedback", alle
+  bereits in `PROCESSED_FEEDBACK.md` (3 Umsetzungen + 3 Rückfragen an
+  Kunden). Keine neuen Hashes, keine Antworten des Kunden auf die
+  offenen Rückfragen.
+- TASKS.md-Backlog leer, keine entsperrten Folgeaufgaben.
+- Leerlauf — kein Branch, kein PR, kein Summary-Issue.
+- Nächster sinnvoller Schritt: warten bis der Kunde die drei
+  `[Frage an Kunden]`-Einträge im Doc beantwortet (Fortschrittsanzeige,
+  5-Streifen-Hinweis, Schrauben-Sichtbarkeit). Sobald eine Antwort
+  unter „Neues Feedback" steht, kann der nächste Lauf die jeweilige
+  Folgeänderung umsetzen.
+
 ### 2026-04-19
 
 - Feedback-Doc: keine neuen Einträge (alle 6 Hashes bereits in
